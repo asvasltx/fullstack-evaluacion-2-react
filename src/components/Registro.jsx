@@ -13,22 +13,18 @@ const Registro = ({ onLogin }) => {
         e.preventDefault();
         setError('');
 
-        // 1. Validar que no haya campos vacíos
         if (nombre.trim() === '' || correo.trim() === '' || clave.trim() === '') {
             setError('Por favor, completa todos los campos.');
             return;
         }
 
-        // 2. Validar que las contraseñas sean iguales
         if (clave !== confirmarClave) {
             setError('Las contraseñas no coinciden.');
             return;
         }
 
-        // 3. Simulación de registro exitoso
         alert(`¡Cuenta creada con éxito, bienvenido ${nombre}!`);
         
-        // Lo "logeamos" automáticamente como cliente y lo mandamos a comprar
         onLogin({ correo, rol: 'cliente', nombre });
         navigate('/'); 
     };
