@@ -6,6 +6,7 @@ import ProductCard from './components/ProductCard';
 import Carrito from './components/Carrito';
 import Login from './components/Login';
 import AdminDashboard from './components/AdminDashboard';
+import Nosotros from './components/Nosotros';
 
 // Importación de datos y estilos
 import { obtenerProductos } from './data/mockDB';
@@ -64,7 +65,11 @@ function App() {
                 WORKCLOTHES<span>.</span>
               </Link>
           </div>
+            
           <div className="nav-acciones d-flex align-items-center gap-3">
+             <Link to="/nosotros" className="btn-nosotros">
+               Sobre Nosotros
+              </Link>
               <Link to="/carrito" className="btn-carrito" style={{ textDecoration: 'none', color: 'inherit' }}> 
                 🛒 Carrito (<span id="cart-count">{totalItems}</span>)
               </Link>
@@ -86,6 +91,7 @@ function App() {
 
         {/* Sistema de Rutas */}
         <Routes>
+          <Route path="/nosotros" element={<Nosotros />} />
           {/* Ruta: Catálogo Principal */}
           <Route path="/" element={
             <main className="contenedor-seccion" style={{ padding: '40px' }}>
