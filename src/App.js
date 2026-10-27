@@ -6,6 +6,7 @@ import ProductCard from './components/ProductCard';
 import Carrito from './components/Carrito';
 import Login from './components/Login';
 import AdminDashboard from './components/AdminDashboard';
+import Registro from './components/Registro';
 
 // Importación de datos y estilos
 import { obtenerProductos } from './data/mockDB';
@@ -88,12 +89,12 @@ function App() {
         <Routes>
           {/* Ruta: Catálogo Principal */}
           <Route path="/" element={
-            <main className="contenedor-seccion" style={{ padding: '40px' }}>
-              <div className="encabezado-seccion" style={{ textAlign: 'center', marginBottom: '40px' }}>
+            <main className="contenedor-seccion" >
+              <div className="encabezado-seccion" >
                   <h2>Catálogo de Prendas</h2>
                   <p>Ropa de trabajo y uso diario confeccionada para máxima resistencia.</p>
               </div>
-              <div className="grilla-productos" style={{ display: 'flex', gap: '20px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              <div className="grilla-productos" >
                 {productos.map((productoActual) => (
                   <ProductCard 
                     key={productoActual.id} 
@@ -117,6 +118,9 @@ function App() {
 
           {/* Ruta: Iniciar Sesión */}
           <Route path="/login" element={<Login onLogin={setUsuarioActivo} />} />
+
+          {/* Ruta: Registro */}
+          <Route path="/registro" element={<Registro onLogin={setUsuarioActivo} />} />
 
           {/* Ruta: Panel de Administrador */}
           <Route path="/admin" element={<AdminDashboard />} />

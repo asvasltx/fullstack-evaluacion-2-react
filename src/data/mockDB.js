@@ -5,7 +5,7 @@ let productos = [
         descripcion: "Lona de algodón 12oz forrada, resistente al viento y la fricción.",
         precio: 49990,
         categoria: "Chaquetas",
-        imagen: "img/chaqueta.jpg"
+        imagen: "chaqueta.jpg"
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ let productos = [
         descripcion: "Tejido térmico resistente al desgaste diario y bajas temperaturas.",
         precio: 29990,
         categoria: "Camisas",
-        imagen: "img/camisa.jpg"
+        imagen: "camisa.jpg"
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ let productos = [
         descripcion: "Algodón peinado denso con cuello reforzado anti-deformación.",
         precio: 16990,
         categoria: "Poleras",
-        imagen: "img/polera1.webp"
+        imagen: "polera1.webp"
     }
 ];
 
