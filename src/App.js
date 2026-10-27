@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Checkout from './components/Checkout';
 
 // Importación de componentes
 import ProductCard from './components/ProductCard';
@@ -10,6 +11,7 @@ import Nosotros from './components/Nosotros';
 import Registro from './components/Registro';
 import Blog from './components/Blog';
 import Contacto from './components/Contacto';
+import PagoExitoso from './components/PagoExitoso';
 
 // Importación de datos y estilos
 import { obtenerProductos } from './data/mockDB';
@@ -100,6 +102,14 @@ function App() {
 
         {/* Sistema de Rutas */}
         <Routes>
+          <Route
+  path="/pago-exitoso"
+  element={<PagoExitoso carrito={carrito} />}
+/>
+          <Route
+  path="/checkout"
+  element={<Checkout carrito={carrito} />}
+/>
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/nosotros" element={<Nosotros />} />

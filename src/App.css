@@ -1208,3 +1208,48 @@ body {
     font-size: 12px;
   }
 }
+
+.pago-resultado {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 45px;
+  background-color: white;
+  border: 1px solid var(--color-borde);
+  border-top: 4px solid var(--color-acento);
+  border-radius: 10px;
+}
+
+.pago-resultado h1 {
+  color: var(--color-oscuro);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.pago-resultado p {
+  color: var(--color-texto-secundario);
+  margin-top: 15px;
+}
+
+.pago-icono-exitoso {
+  width: 75px;
+  height: 75px;
+  background-color: #dcfce7;
+  color: #15803d;
+  border-radius: 50%;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .pago-resultado {
+    padding: 25px;
+  }
+
+  .pago-resultado h1 {
+    font-size: 24px;
+  }
+}

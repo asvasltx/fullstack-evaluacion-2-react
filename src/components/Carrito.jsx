@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Carrito = ({ carrito, onCambiarCantidad, onEliminar, onLimpiar }) => {
+    const navigate = useNavigate();
     // Calcula el total sumando el precio por la cantidad de cada producto
     const totalPrecio = carrito.reduce((acc, item) => acc + (item.precio * item.cantidad), 0);
 
@@ -72,9 +74,12 @@ const Carrito = ({ carrito, onCambiarCantidad, onEliminar, onLimpiar }) => {
                                 <button className="btn btn-secondary btn-lg me-2" onClick={onLimpiar}>
                                     Limpiar Carrito
                                 </button>
-                                <button className="btn btn-success btn-lg">
-                                    Comprar ahora
-                                </button>
+                                <button
+    className="btn btn-success btn-lg"
+    onClick={() => navigate('/checkout')}
+>
+    Comprar ahora
+</button>
                             </div>
                         </>
                     )}
