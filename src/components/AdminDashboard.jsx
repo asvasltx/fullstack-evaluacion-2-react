@@ -21,7 +21,7 @@ const AdminDashboard = () => {
                 <p>Monitoreo de existencias en bodega y administración de accesos al sistema.</p>
             </div>
 
-            {/* SECCIÓN 1: INVENTARIO REAL */}
+            
             <section className="seccion-admin" id="inventario">
                 <div className="barra-titulo-admin">
                     <h3>Control de Inventario</h3>
@@ -54,7 +54,7 @@ const AdminDashboard = () => {
                 </div>
             </section>
 
-            {/* SECCIÓN 2: USUARIOS (Estático como en tu diseño) */}
+            
             <section className="seccion-admin" id="usuarios" style={{ marginTop: '3.5rem' }}>
                 <div className="barra-titulo-admin">
                     <h3>Gestión de Usuarios y Roles</h3>

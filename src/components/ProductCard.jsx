@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ProductCard = ({ producto, onAgregarAlCarrito }) => {
-    // Si no viene un producto, no renderizamos nada para evitar errores
     if (!producto) return null;
 
     return (

@@ -11,7 +11,6 @@ const Login = ({ onLogin }) => {
         e.preventDefault();
         setError('');
 
-        // Validación simple (como en tu novalidate)
         if (correo.trim() === '' || clave.trim() === '') {
             setError('Por favor, completa todos los campos.');
             return;
