@@ -9,6 +9,7 @@ import AdminDashboard from './components/AdminDashboard';
 import Nosotros from './components/Nosotros';
 import Registro from './components/Registro';
 import Blog from './components/Blog';
+import Contacto from './components/Contacto';
 
 // Importación de datos y estilos
 import { obtenerProductos } from './data/mockDB';
@@ -69,6 +70,9 @@ function App() {
           </div>
             
           <div className="nav-acciones d-flex align-items-center gap-3">
+            <Link to="/contacto" className="btn-contacto">
+                   Contacto
+                </Link>
                 <Link to="/blog" className="btn-blog">
                  Blog
                   </Link>
@@ -96,6 +100,7 @@ function App() {
 
         {/* Sistema de Rutas */}
         <Routes>
+          <Route path="/contacto" element={<Contacto />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/nosotros" element={<Nosotros />} />
           {/* Ruta: Catálogo Principal */}

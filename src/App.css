@@ -1127,3 +1127,84 @@ body {
     font-size: 12px;
   }
 }
+
+.contacto {
+  background-color: var(--color-fondo);
+  min-height: 80vh;
+}
+
+.contacto-contenedor {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border: 1px solid var(--color-borde);
+  border-top: 4px solid var(--color-acento);
+  border-radius: 10px;
+}
+
+.contacto-contenedor h2 {
+  color: var(--color-oscuro);
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.contacto-descripcion {
+  color: var(--color-texto-secundario);
+  margin-bottom: 30px;
+}
+
+.contacto .form-label {
+  font-weight: 600;
+  color: var(--color-oscuro);
+}
+
+.contacto .form-control {
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.contacto .form-control:focus {
+  border-color: var(--color-acento);
+  box-shadow: 0 0 0 0.2rem rgba(180, 83, 9, 0.12);
+}
+
+.contacto-boton {
+  background-color: var(--color-oscuro);
+  color: white;
+  border: none;
+  padding: 13px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contacto-boton:hover {
+  background-color: var(--color-acento-hover);
+}
+
+.btn-contacto {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  color: var(--color-oscuro);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn-contacto:hover {
+  background-color: #fef3c7;
+  color: var(--color-acento-hover);
+}
+
+@media (max-width: 768px) {
+  .contacto-contenedor {
+    padding: 25px;
+  }
+
+  .btn-contacto {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
