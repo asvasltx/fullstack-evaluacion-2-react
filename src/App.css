@@ -1253,3 +1253,17 @@ body {
     font-size: 24px;
   }
 }
+
+.pago-icono-rechazado {
+  width: 75px;
+  height: 75px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-radius: 50%;
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

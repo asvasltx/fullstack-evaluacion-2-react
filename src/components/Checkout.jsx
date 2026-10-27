@@ -1,9 +1,10 @@
 
 import React, { useState } from 'react';
-const navigate = useNavigate();
+
 import { Link, useNavigate } from 'react-router-dom';
 
 function Checkout({ carrito }) {
+ const navigate = useNavigate();
   const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
   const [direccion, setDireccion] = useState('');
